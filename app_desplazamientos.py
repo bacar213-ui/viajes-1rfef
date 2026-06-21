@@ -256,7 +256,6 @@ grupo_sel = st.sidebar.radio("🏆 Selecciona grupo", options=[1, 2],
 equipos_grupo = sorted([k for k, v in TEAMS.items() if v["grupo"] == grupo_sel])
 equipo_ref = st.sidebar.selectbox(f"📍 Equipo del Grupo {grupo_sel}", options=equipos_grupo)
 st.sidebar.markdown("---")
-ver_records = st.sidebar.checkbox("🏅 Mostrar Records del grupo", value=False)
 
 # ── TÍTULO ────────────────────────────────────────────────────────────────────
 color_grupo = GRUPO_COLORS[grupo_sel]
@@ -429,28 +428,27 @@ c3.metric("Media del grupo", f"{int(df['Km'].mean())} km")
 st.dataframe(df, use_container_width=True)
 
 # ── RECORDS ───────────────────────────────────────────────────────────────────
-if ver_records:
-    st.markdown("---")
-    st.markdown(f"## 🏅 Récords — Grupo {grupo_sel}")
-    st.caption("Distancias calculadas por OSRM. Rutas con UD Ibiza incluyen 3 tramos: carretera + ferry + carretera en isla.")
-    rec = RECORDS[grupo_sel]
+st.markdown("---")
+st.markdown(f"## 🏅 Récords — Grupo {grupo_sel}")
+st.caption("Distancias calculadas por OSRM. Rutas con UD Ibiza incluyen 3 tramos: carretera + ferry + carretera en isla.")
+rec = RECORDS[grupo_sel]
 
-    col_l, col_r = st.columns(2)
-    with col_l:
-        st.markdown("#### 🔴 Top 3 viajes más largos")
-        for i, row in enumerate(rec["top3_largos"]):
-            extra = f" ⛴️ ({row['puerto_orig']}→{row['puerto_dest']})" if row["ferry"] else ""
-            st.markdown(f"**{i+1}.** {row['eq_a']} → {row['eq_b']}{extra}  \n&nbsp;&nbsp;&nbsp;&nbsp;`{row['km']} km`")
-        st.markdown("#### 🟢 Top 3 viajes más cortos")
-        for row in rec["top3_cortos"]:
-            st.markdown(f"- {row['eq_a']} → {row['eq_b']}  \n&nbsp;&nbsp;&nbsp;&nbsp;`{row['km']} km`")
+col_l, col_r = st.columns(2)
+with col_l:
+    st.markdown("#### 🔴 Top 3 viajes más largos")
+    for i, row in enumerate(rec["top3_largos"]):
+        extra = f" ⛴️ ({row['puerto_orig']}→{row['puerto_dest']})" if row["ferry"] else ""
+        st.markdown(f"**{i+1}.** {row['eq_a']} → {row['eq_b']}{extra}  \n&nbsp;&nbsp;&nbsp;&nbsp;`{row['km']} km`")
+    st.markdown("#### 🟢 Top 3 viajes más cortos")
+    for row in rec["top3_cortos"]:
+        st.markdown(f"- {row['eq_a']} → {row['eq_b']}  \n&nbsp;&nbsp;&nbsp;&nbsp;`{row['km']} km`")
 
-    with col_r:
-        st.markdown("#### 🧳 Equipo que más km recorre en total")
-        st.markdown(f"**{rec['eq_mas']}**  \n`{rec['km_mas']:,} km`")
-        st.markdown("#### 🏡 Equipo que menos km recorre en total")
-        st.markdown(f"**{rec['eq_menos']}**  \n`{rec['km_menos']:,} km`")
-        st.markdown("#### 📋 Km totales por equipo")
-        df_km = pd.DataFrame(rec["km_totales"], columns=["Equipo", "Km totales"])
-        df_km.index += 1
-        st.dataframe(df_km, use_container_width=True)
+with col_r:
+    st.markdown("#### 🧳 Equipo que más km recorre en total")
+    st.markdown(f"**{rec['eq_mas']}**  \n`{rec['km_mas']:,} km`")
+    st.markdown("#### 🏡 Equipo que menos km recorre en total")
+    st.markdown(f"**{rec['eq_menos']}**  \n`{rec['km_menos']:,} km`")
+    st.markdown("#### 📋 Km totales por equipo")
+    df_km = pd.DataFrame(rec["km_totales"], columns=["Equipo", "Km totales"])
+    df_km.index += 1
+    st.dataframe(df_km, use_container_width=True)
