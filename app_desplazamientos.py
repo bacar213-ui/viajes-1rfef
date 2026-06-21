@@ -221,11 +221,12 @@ def color_from_km(km):
     g = int(210 - 160 * ratio)
     return f"#{r:02x}{g:02x}50"
 
-def provincia_color(count, max_count):
-    if count == 0: return "#f0f0f0"
-    intensity = count / max_count
-    r = int(220 - 170 * intensity); g = int(240 - 80 * intensity); b = int(220 - 170 * intensity)
-    return f"#{r:02x}{g:02x}{b:02x}"
+# Colores fijos por grupo para provincias con equipo
+GRUPO_PROV_COLOR = {
+    1: "#a8c8f0",   # azul claro grupo 1
+    2: "#f0a8a8",   # rojo claro grupo 2
+}
+PROV_EMPTY_COLOR = "#f0f0f0"
 
 @st.cache_data(show_spinner=False)
 def calcular_todas_distancias_grupo(grupo):
@@ -301,14 +302,24 @@ m = folium.Map(location=[ref["lat"], ref["lon"]], zoom_start=6, tiles="CartoDB p
 
 geojson_data = load_geojson()
 if geojson_data:
-    from collections import Counter
-    prov_counts = Counter(v["provincia"] for k, v in TEAMS.items() if v["grupo"] == grupo_sel)
-    max_c = max(prov_counts.values()) if prov_counts else 1
+    # Provincias por grupo (independiente del equipo seleccionado)
+    prov_grupo = {}
+    for v in TEAMS.values():
+        prov = v["provincia"]
+        g = v["grupo"]
+        # Si una provincia tiene equipos en ambos grupos, priorizar el grupo activo
+        if prov not in prov_grupo:
+            prov_grupo[prov] = g
+        elif prov_grupo[prov] != g:
+            prov_grupo[prov] = grupo_sel  # conflicto: usar color del grupo activo
+
     for feature in geojson_data.get("features", []):
         pname = feature["properties"].get("name", "")
-        color = provincia_color(prov_counts.get(pname, 0), max_c)
-        folium.GeoJson(feature, style_function=lambda f, c=color: {
-            "fillColor": c, "color": "#aaa", "weight": 0.5, "fillOpacity": 0.35
+        g = prov_grupo.get(pname)
+        color = GRUPO_PROV_COLOR.get(g, PROV_EMPTY_COLOR)
+        opacity = 0.5 if g else 0.15
+        folium.GeoJson(feature, style_function=lambda f, c=color, o=opacity: {
+            "fillColor": c, "color": "#aaa", "weight": 0.5, "fillOpacity": o
         }).add_to(m)
 
 for nombre, info in rutas.items():
