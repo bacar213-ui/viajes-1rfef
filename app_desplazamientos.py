@@ -8,13 +8,10 @@ from itertools import combinations
 
 st.set_page_config(page_title="Distancias 1ª RFEF", layout="wide", page_icon="⚽")
 
-# Ocultar botón de GitHub y menú footer de Streamlit
+# Ocultar footer de Streamlit (sin tocar header ni sidebar)
 st.markdown("""
     <style>
-        #MainMenu {visibility: hidden;}
         footer {visibility: hidden;}
-        .viewerBadge_container__1QSob {display: none !important;}
-        [data-testid="stToolbar"] {visibility: hidden;}
     </style>
 """, unsafe_allow_html=True)
 
