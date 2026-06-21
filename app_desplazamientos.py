@@ -62,21 +62,30 @@ IBIZA = "UD Ibiza"
 RUTAS_FERRY = [
     {
         "origen_nombre": "Gandia",
-        "origen":  {"lat": 38.9960, "lon": -0.1540},  # muelle ferry Gandia
+        "origen":  {"lat": 38.9950610478033, "lon": -0.15346897521595212},   # acceso carretera al puerto Gandia
         "destino_nombre": "Sant Antoni de Portmany",
-        "destino": {"lat": 38.9808, "lon":  1.2980},  # muelle Sant Antoni
+        "destino": {"lat": 38.975554005257635, "lon":  1.297112405561499},   # acceso carretera al puerto Sant Antoni
         "ferry_km": 108,
-        # waypoints que rodean la isla de Conejera por el norte
-        "waypoints": [[39.00499773748464, 1.2106378435059044]],
+        # trayecto marítimo: salida Gandia → llegada Sant Antoni
+        "waypoints": [
+            [38.995884594752795, -0.1513931452646039],  # bocana exterior Gandia
+            [38.99282066458908,  -0.13454632412977524], # alejamiento costa
+            [39.00394966983859,   1.213230149276052],   # aproximación Sant Antoni
+        ],
     },
     {
         "origen_nombre": "Dénia",
-        "origen":  {"lat": 38.8390, "lon":  0.1140},  # muelle ferry Dénia
+        "origen":  {"lat": 38.84431462234434, "lon":  0.11404301158190844},  # acceso carretera al puerto Dénia
         "destino_nombre": "Eivissa (puerto)",
-        "destino": {"lat": 38.9040, "lon":  1.4420},  # muelle Eivissa
+        "destino": {"lat": 38.91327005394988, "lon":  1.4389573444430053},   # acceso carretera al puerto Eivissa
         "ferry_km": 90,
-        # waypoints que rodean la isla de Conejera por el norte
-        "waypoints": [[38.80959953974597, 1.4141062763630279]],
+        # trayecto marítimo: salida Dénia → llegada Eivissa
+        "waypoints": [
+            [38.84150381318489, 0.11686307849794988],   # bocana exterior Dénia
+            [38.84674926415975, 0.1270323757478564],    # alejamiento costa
+            [38.81356363018376, 1.4168378997314923],    # aproximación Eivissa
+            [38.91107651403887, 1.4448261072383897],    # bocana exterior Eivissa
+        ],
     },
 ]
 
