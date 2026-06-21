@@ -38,7 +38,7 @@ TEAMS = {
     "UE Sant Andreu":             {"lat": 41.428836, "lon":  2.193047, "stadium": "Estadio Narcis Sala",                  "city": "Barcelona",         "provincia": "Barcelona",          "grupo": 2},
     "CE Europa":                  {"lat": 41.411800, "lon":  2.161500, "stadium": "Nou Sardenya",                         "city": "Barcelona",         "provincia": "Barcelona",          "grupo": 2},
     "UD Ibiza":                   {"lat": 38.913780, "lon":  1.415090, "stadium": "Estadio Can Misses",                   "city": "Ibiza",             "provincia": "Illes Balears",      "grupo": 2},
-    "AD Alcorcon":                {"lat": 40.338889, "lon": -3.840556, "stadium": "Estadio Santo Domingo",                "city": "Alcorcón",          "provincia": "Madrid",             "grupo": 2},
+    "AD Alcorcón":                {"lat": 40.338889, "lon": -3.840556, "stadium": "Estadio Santo Domingo",                "city": "Alcorcón",          "provincia": "Madrid",             "grupo": 2},
     "Rayo Majadahonda":           {"lat": 40.457558, "lon": -3.860309, "stadium": "Estadio Cerro del Espino",             "city": "Majadahonda",       "provincia": "Madrid",             "grupo": 2},
     "Atlético de Madrid B":       {"lat": 40.481400, "lon": -3.330500, "stadium": "Centro Deportivo Alcala de Henares",   "city": "Alcalá de Henares", "provincia": "Madrid",             "grupo": 2},
     "Real Madrid Castilla":       {"lat": 40.476856, "lon": -3.614287, "stadium": "Estadio Alfredo Di Stefano",           "city": "Madrid",            "provincia": "Madrid",             "grupo": 2},
@@ -113,7 +113,7 @@ RECORDS = {
         ],
         "top3_cortos": [
             {"eq_a": "UE Sant Andreu", "eq_b": "CE Europa", "km": 5},
-            {"eq_a": "AD Alcorcon", "eq_b": "Rayo Majadahonda", "km": 18},
+            {"eq_a": "AD Alcorcón", "eq_b": "Rayo Majadahonda", "km": 18},
             {"eq_a": "Rayo Majadahonda", "eq_b": "Real Madrid Castilla", "km": 28},
         ],
         "eq_mas": "Algeciras CF", "km_mas": 13027,
@@ -123,7 +123,7 @@ RECORDS = {
             ("CE Europa", 10638), ("Antequera CF", 10108), ("SD Huesca", 9523),
             ("Nàstic de Tarragona", 9315), ("UD Ibiza", 9274), ("Real Jaén CF", 8637),
             ("Real Zaragoza", 8600), ("Águilas FC", 8137), ("Rayo Majadahonda", 7910),
-            ("FC Cartagena", 7782), ("AD Alcorcon", 7748), ("Atlético de Madrid B", 7627),
+            ("FC Cartagena", 7782), ("AD Alcorcón", 7748), ("Atlético de Madrid B", 7627),
             ("Real Madrid Castilla", 7621), ("Villarreal B", 7469), ("CD Teruel", 7427),
             ("Hércules CF", 7287), ("Real Murcia CF", 7142),
         ],
@@ -406,7 +406,7 @@ st_folium(m, use_container_width=True, height=580, returned_objects=[], key=f'ma
 
 # ── TABLA ────────────────────────────────────────────────────────────────────
 st.markdown("---")
-st.subheader(f"📊 Todas las distancias desde {equipo_ref}")
+st.subheader(f"📊 Todas las distancias para {equipo_ref} desde {city_ref}")
 filas = []
 for nombre, info in rutas.items():
     t = TEAMS[nombre]
