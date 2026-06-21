@@ -38,7 +38,7 @@ TEAMS = {
     "UE Sant Andreu":             {"lat": 41.428836, "lon":  2.193047, "stadium": "Estadio Narcis Sala",                  "city": "Barcelona",         "provincia": "Barcelona",          "grupo": 2},
     "CE Europa":                  {"lat": 41.411800, "lon":  2.161500, "stadium": "Nou Sardenya",                         "city": "Barcelona",         "provincia": "Barcelona",          "grupo": 2},
     "UD Ibiza":                   {"lat": 38.913780, "lon":  1.415090, "stadium": "Estadio Can Misses",                   "city": "Ibiza",             "provincia": "Illes Balears",      "grupo": 2},
-    "AD Alcorcón":                {"lat": 40.338889, "lon": -3.840556, "stadium": "Estadio Santo Domingo",                "city": "Alcorcón",          "provincia": "Madrid",             "grupo": 2},
+    "AD Alcorcon":                {"lat": 40.338889, "lon": -3.840556, "stadium": "Estadio Santo Domingo",                "city": "Alcorcón",          "provincia": "Madrid",             "grupo": 2},
     "Rayo Majadahonda":           {"lat": 40.457558, "lon": -3.860309, "stadium": "Estadio Cerro del Espino",             "city": "Majadahonda",       "provincia": "Madrid",             "grupo": 2},
     "Atlético de Madrid B":       {"lat": 40.481400, "lon": -3.330500, "stadium": "Centro Deportivo Alcala de Henares",   "city": "Alcalá de Henares", "provincia": "Madrid",             "grupo": 2},
     "Real Madrid Castilla":       {"lat": 40.476856, "lon": -3.614287, "stadium": "Estadio Alfredo Di Stefano",           "city": "Madrid",            "provincia": "Madrid",             "grupo": 2},
@@ -403,7 +403,7 @@ for nombre in equipos_grupo:
         icon=icon
     ).add_to(m)
 
-st_folium(m, use_container_width=True, height=580)
+st_folium(m, use_container_width=True, height=580, returned_objects=[], key=f'map_{grupo_sel}_{equipo_ref}')
 
 # ── TABLA ────────────────────────────────────────────────────────────────────
 st.markdown("---")
