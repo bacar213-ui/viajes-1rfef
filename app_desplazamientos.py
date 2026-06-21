@@ -8,6 +8,17 @@ from itertools import combinations
 
 st.set_page_config(page_title="Distancias 1ª RFEF", layout="wide", page_icon="⚽")
 
+# Ocultar botón de GitHub y menú footer de Streamlit
+st.markdown("""
+    <style>
+        #MainMenu {visibility: hidden;}
+        footer {visibility: hidden;}
+        .viewerBadge_container__1QSob {display: none !important;}
+        [data-testid="stToolbar"] {visibility: hidden;}
+    </style>
+""", unsafe_allow_html=True)
+
+
 TEAMS = {
     # ── GRUPO 1 ──────────────────────────────────────────────────────────────
     "Pontevedra CF":              {"lat": 42.438590, "lon": -8.641360, "stadium": "Estadio Municipal de Pasaron",         "city": "Pontevedra",        "provincia": "Pontevedra",         "grupo": 1},
