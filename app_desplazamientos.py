@@ -260,10 +260,10 @@ ver_records = st.sidebar.checkbox("🏅 Mostrar Records del grupo", value=False)
 
 # ── TÍTULO ────────────────────────────────────────────────────────────────────
 color_grupo = GRUPO_COLORS[grupo_sel]
+ref = TEAMS[equipo_ref]
 city_ref = ref["city"]
 st.markdown(f"<h2 style='color:{color_grupo};'>Grupo {grupo_sel} — Distancias para el <em>{equipo_ref}</em> desde {city_ref}</h2>",
             unsafe_allow_html=True)
-ref = TEAMS[equipo_ref]
 
 # ── CALCULAR RUTAS ────────────────────────────────────────────────────────────
 with st.spinner("Calculando rutas..."):
