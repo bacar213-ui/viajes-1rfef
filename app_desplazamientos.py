@@ -15,18 +15,18 @@ TEAMS = {
     "Racing Club Ferrol":         {"lat": 43.490726, "lon": -8.239403, "stadium": "Estadio Municipal de A Malata",        "city": "Ferrol",            "provincia": "A Coruña",           "grupo": 1},
     "UD Ourense":                 {"lat": 42.340650, "lon": -7.875730, "stadium": "Estadio de O Couto",                   "city": "Ourense",           "provincia": "Ourense",            "grupo": 1},
     "CD Lugo":                    {"lat": 43.003365, "lon": -7.570954, "stadium": "Estadio Anxo Carro",                   "city": "Lugo",              "provincia": "Lugo",               "grupo": 1},
-    "Real Aviles Industrial":     {"lat": 43.557500, "lon": -5.930600, "stadium": "Estadio Roman Suarez Puerta",          "city": "Aviles",            "provincia": "Asturias",           "grupo": 1},
+    "Real Avilés Industrial":     {"lat": 43.557500, "lon": -5.930600, "stadium": "Estadio Roman Suarez Puerta",          "city": "Aviles",            "provincia": "Asturias",           "grupo": 1},
     "Barakaldo CF":               {"lat": 43.302103, "lon": -2.986659, "stadium": "Estadio de Lasesarre",                 "city": "Barakaldo",         "provincia": "Bizkaia/Vizcaya",    "grupo": 1},
     "Arenas Club":                {"lat": 43.331469, "lon": -3.006467, "stadium": "Campo Municipal de Gobela",            "city": "Getxo",             "provincia": "Bizkaia/Vizcaya",    "grupo": 1},
     "Athletic Club B":            {"lat": 43.277500, "lon": -2.839320, "stadium": "Lezama",                               "city": "Lezama",            "provincia": "Bizkaia/Vizcaya",    "grupo": 1},
-    "Real Union":                 {"lat": 43.345560, "lon": -1.785830, "stadium": "Stadium Gal",                          "city": "Irun",              "provincia": "Gipuzkoa/Guipúzcoa", "grupo": 1},
-    "UD Logrones":                {"lat": 42.452970, "lon": -2.453340, "stadium": "Estadio Las Gaunas",                   "city": "Logrono",           "provincia": "La Rioja",           "grupo": 1},
-    "CD Mirandes":                {"lat": 42.680786, "lon": -2.935436, "stadium": "Estadio Municipal de Anduva",          "city": "Miranda de Ebro",   "provincia": "Burgos",             "grupo": 1},
+    "Real Unión":                 {"lat": 43.345560, "lon": -1.785830, "stadium": "Stadium Gal",                          "city": "Irun",              "provincia": "Gipuzkoa/Guipúzcoa", "grupo": 1},
+    "UD Logroñés":                {"lat": 42.452970, "lon": -2.453340, "stadium": "Estadio Las Gaunas",                   "city": "Logrono",           "provincia": "La Rioja",           "grupo": 1},
+    "CD Mirandés":                {"lat": 42.680786, "lon": -2.935436, "stadium": "Estadio Municipal de Anduva",          "city": "Miranda de Ebro",   "provincia": "Burgos",             "grupo": 1},
     "CyD Leonesa":                {"lat": 42.587470, "lon": -5.577040, "stadium": "Estadio Reino de Leon",                "city": "Leon",              "provincia": "León",               "grupo": 1},
     "Unionistas de Salamanca CF": {"lat": 40.946684, "lon": -5.665987, "stadium": "Estadio Municipal Reina Sofia",        "city": "Salamanca",         "provincia": "Salamanca",          "grupo": 1},
-    "CP Cacereno":                {"lat": 39.487130, "lon": -6.412350, "stadium": "Estadio Principe Felipe",              "city": "Caceres",           "provincia": "Cáceres",            "grupo": 1},
+    "CP Cacereño":                {"lat": 39.487130, "lon": -6.412350, "stadium": "Estadio Principe Felipe",              "city": "Caceres",           "provincia": "Cáceres",            "grupo": 1},
     "CD Coria":                   {"lat": 39.988190, "lon": -6.536300, "stadium": "Estadio La Isla",                      "city": "Coria",             "provincia": "Cáceres",            "grupo": 1},
-    "AD Merida":                  {"lat": 38.913933, "lon": -6.336406, "stadium": "Estadio Romano Jose Fouto",            "city": "Merida",            "provincia": "Badajoz",            "grupo": 1},
+    "AD Mérida":                  {"lat": 38.913933, "lon": -6.336406, "stadium": "Estadio Romano Jose Fouto",            "city": "Merida",            "provincia": "Badajoz",            "grupo": 1},
     "CD Extremadura":             {"lat": 38.684350, "lon": -6.414590, "stadium": "Estadio Francisco de la Hera",         "city": "Almendralejo",      "provincia": "Badajoz",            "grupo": 1},
     "SD Ponferradina":            {"lat": 42.557400, "lon": -6.599972, "stadium": "Estadio El Toralin",                   "city": "Ponferrada",        "provincia": "León",               "grupo": 1},
     "Zamora CF":                  {"lat": 41.486390, "lon": -5.748060, "stadium": "Estadio Ruta de la Plata",             "city": "Zamora",            "provincia": "Zamora",             "grupo": 1},
@@ -34,23 +34,23 @@ TEAMS = {
     "Real Zaragoza":              {"lat": 41.683664, "lon": -0.895446, "stadium": "Ibercaja Estadio (modular)",           "city": "Zaragoza",          "provincia": "Zaragoza",           "grupo": 2},
     "SD Huesca":                  {"lat": 42.131944, "lon": -0.424444, "stadium": "Estadio El Alcoraz",                   "city": "Huesca",            "provincia": "Huesca",             "grupo": 2},
     "CD Teruel":                  {"lat": 40.332050, "lon": -1.105860, "stadium": "Estadio de Pinilla",                   "city": "Teruel",            "provincia": "Teruel",             "grupo": 2},
-    "Nastic de Tarragona":        {"lat": 41.127003, "lon":  1.272830, "stadium": "Nou Estadi Costa Daurada",             "city": "Tarragona",         "provincia": "Tarragona",          "grupo": 2},
+    "Nàstic de Tarragona":        {"lat": 41.127003, "lon":  1.272830, "stadium": "Nou Estadi Costa Daurada",             "city": "Tarragona",         "provincia": "Tarragona",          "grupo": 2},
     "UE Sant Andreu":             {"lat": 41.428836, "lon":  2.193047, "stadium": "Estadio Narcis Sala",                  "city": "Barcelona",         "provincia": "Barcelona",          "grupo": 2},
     "CE Europa":                  {"lat": 41.411800, "lon":  2.161500, "stadium": "Nou Sardenya",                         "city": "Barcelona",         "provincia": "Barcelona",          "grupo": 2},
     "UD Ibiza":                   {"lat": 38.913780, "lon":  1.415090, "stadium": "Estadio Can Misses",                   "city": "Ibiza",             "provincia": "Illes Balears",      "grupo": 2},
     "AD Alcorcon":                {"lat": 40.338889, "lon": -3.840556, "stadium": "Estadio Santo Domingo",                "city": "Alcorcon",          "provincia": "Madrid",             "grupo": 2},
     "Rayo Majadahonda":           {"lat": 40.457558, "lon": -3.860309, "stadium": "Estadio Cerro del Espino",             "city": "Majadahonda",       "provincia": "Madrid",             "grupo": 2},
-    "Atletico de Madrid B":       {"lat": 40.481400, "lon": -3.330500, "stadium": "Centro Deportivo Alcala de Henares",   "city": "Alcala de Henares", "provincia": "Madrid",             "grupo": 2},
+    "Atlético de Madrid B":       {"lat": 40.481400, "lon": -3.330500, "stadium": "Centro Deportivo Alcala de Henares",   "city": "Alcala de Henares", "provincia": "Madrid",             "grupo": 2},
     "Real Madrid Castilla":       {"lat": 40.476856, "lon": -3.614287, "stadium": "Estadio Alfredo Di Stefano",           "city": "Madrid",            "provincia": "Madrid",             "grupo": 2},
-    "Hercules CF":                {"lat": 38.357204, "lon": -0.492754, "stadium": "Estadio Jose Rico Perez",              "city": "Alicante",          "provincia": "Alacant/Alicante",   "grupo": 2},
+    "Hércules CF":                {"lat": 38.357204, "lon": -0.492754, "stadium": "Estadio Jose Rico Perez",              "city": "Alicante",          "provincia": "Alacant/Alicante",   "grupo": 2},
     "Villarreal B":               {"lat": 39.939487, "lon": -0.114498, "stadium": "Ciudad Deportiva Jose Manuel Llaneza", "city": "Vila-real",         "provincia": "Castelló/Castellón", "grupo": 2},
     "FC Cartagena":               {"lat": 37.609746, "lon": -0.995977, "stadium": "Estadio Cartagonova",                  "city": "Cartagena",         "provincia": "Murcia",             "grupo": 2},
     "Real Murcia CF":             {"lat": 38.042250, "lon": -1.144730, "stadium": "Estadio Enrique Roca de Murcia",       "city": "Murcia",            "provincia": "Murcia",             "grupo": 2},
-    "Aguilas FC":                 {"lat": 37.404300, "lon": -1.590040, "stadium": "Estadio El Rubial",                    "city": "Aguilas",           "provincia": "Murcia",             "grupo": 2},
+    "Águilas FC":                 {"lat": 37.404300, "lon": -1.590040, "stadium": "Estadio El Rubial",                    "city": "Aguilas",           "provincia": "Murcia",             "grupo": 2},
     "Antequera CF":               {"lat": 37.020600, "lon": -4.559368, "stadium": "Estadio El Mauli",                     "city": "Antequera",         "provincia": "Málaga",             "grupo": 2},
     "Algeciras CF":               {"lat": 36.163333, "lon": -5.465280, "stadium": "Estadio Nuevo Mirador",                "city": "Algeciras",         "provincia": "Cádiz",              "grupo": 2},
     "CD Torremolinos":            {"lat": 36.621460, "lon": -4.509930, "stadium": "Campo de Futbol El Pozuelo",           "city": "Torremolinos",      "provincia": "Málaga",             "grupo": 2},
-    "Real Jaen CF":               {"lat": 37.776159, "lon": -3.786839, "stadium": "Estadio Municipal La Victoria",        "city": "Jaen",              "provincia": "Jaén",               "grupo": 2},
+    "Real Jaén CF":               {"lat": 37.776159, "lon": -3.786839, "stadium": "Estadio Municipal La Victoria",        "city": "Jaen",              "provincia": "Jaén",               "grupo": 2},
 }
 
 GRUPO_COLORS = {1: "#1a6fb5", 2: "#c0392b"}
@@ -84,9 +84,9 @@ RUTAS_FERRY = [
 RECORDS = {
     1: {
         "top3_largos": [
-            {"eq_a": "Real Union", "eq_b": "CD Extremadura", "km": 774, "ferry": False, "puerto_orig": None, "puerto_dest": None},
+            {"eq_a": "Real Unión", "eq_b": "CD Extremadura", "km": 774, "ferry": False, "puerto_orig": None, "puerto_dest": None},
             {"eq_a": "Racing Club Ferrol", "eq_b": "CD Extremadura", "km": 773, "ferry": False, "puerto_orig": None, "puerto_dest": None},
-            {"eq_a": "Pontevedra CF", "eq_b": "Real Union", "km": 755, "ferry": False, "puerto_orig": None, "puerto_dest": None},
+            {"eq_a": "Pontevedra CF", "eq_b": "Real Unión", "km": 755, "ferry": False, "puerto_orig": None, "puerto_dest": None},
         ],
         "top3_cortos": [
             {"eq_a": "Barakaldo CF", "eq_b": "Arenas Club", "km": 11},
@@ -96,12 +96,12 @@ RECORDS = {
         "eq_mas": "CD Extremadura", "km_mas": 10273,
         "eq_menos": "CyD Leonesa", "km_menos": 5865,
         "km_totales": [
-            ("CD Extremadura", 10273), ("AD Merida", 9812), ("Real Union", 9109),
-            ("CP Cacereno", 8700), ("Pontevedra CF", 8482), ("Racing Club Ferrol", 8393),
-            ("CD Coria", 8236), ("Deportivo Fabril", 8086), ("UD Logrones", 7779),
+            ("CD Extremadura", 10273), ("AD Mérida", 9812), ("Real Unión", 9109),
+            ("CP Cacereño", 8700), ("Pontevedra CF", 8482), ("Racing Club Ferrol", 8393),
+            ("CD Coria", 8236), ("Deportivo Fabril", 8086), ("UD Logroñés", 7779),
             ("UD Ourense", 7688), ("Athletic Club B", 7667), ("Arenas Club", 7604),
-            ("Barakaldo CF", 7557), ("CD Mirandes", 7146), ("CD Lugo", 7142),
-            ("Real Aviles Industrial", 6737), ("SD Ponferradina", 6355),
+            ("Barakaldo CF", 7557), ("CD Mirandés", 7146), ("CD Lugo", 7142),
+            ("Real Avilés Industrial", 6737), ("SD Ponferradina", 6355),
             ("Unionistas de Salamanca CF", 6348), ("Zamora CF", 5913), ("CyD Leonesa", 5865),
         ],
     },
@@ -121,11 +121,11 @@ RECORDS = {
         "km_totales": [
             ("Algeciras CF", 13027), ("CD Torremolinos", 10906), ("UE Sant Andreu", 10814),
             ("CE Europa", 10638), ("Antequera CF", 10108), ("SD Huesca", 9523),
-            ("Nastic de Tarragona", 9315), ("UD Ibiza", 9274), ("Real Jaen CF", 8637),
-            ("Real Zaragoza", 8600), ("Aguilas FC", 8137), ("Rayo Majadahonda", 7910),
-            ("FC Cartagena", 7782), ("AD Alcorcon", 7748), ("Atletico de Madrid B", 7627),
+            ("Nàstic de Tarragona", 9315), ("UD Ibiza", 9274), ("Real Jaén CF", 8637),
+            ("Real Zaragoza", 8600), ("Águilas FC", 8137), ("Rayo Majadahonda", 7910),
+            ("FC Cartagena", 7782), ("AD Alcorcon", 7748), ("Atlético de Madrid B", 7627),
             ("Real Madrid Castilla", 7621), ("Villarreal B", 7469), ("CD Teruel", 7427),
-            ("Hercules CF", 7287), ("Real Murcia CF", 7142),
+            ("Hércules CF", 7287), ("Real Murcia CF", 7142),
         ],
     },
 }
@@ -260,7 +260,8 @@ ver_records = st.sidebar.checkbox("🏅 Mostrar Records del grupo", value=False)
 
 # ── TÍTULO ────────────────────────────────────────────────────────────────────
 color_grupo = GRUPO_COLORS[grupo_sel]
-st.markdown(f"<h2 style='color:{color_grupo};'>Grupo {grupo_sel} — Distancias desde <em>{equipo_ref}</em></h2>",
+city_ref = ref["city"]
+st.markdown(f"<h2 style='color:{color_grupo};'>Grupo {grupo_sel} — Distancias para el <em>{equipo_ref}</em> desde {city_ref}</h2>",
             unsafe_allow_html=True)
 ref = TEAMS[equipo_ref]
 
