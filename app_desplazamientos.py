@@ -307,7 +307,7 @@ elif tiene_ferry:
     r_f = rutas[IBIZA]["ferry"]
     rf  = r_f["ruta_ferry"]
     st.info(
-        f"⛴️ Ruta a **UD Ibiza** via **{rf['origen_nombre']} → {rf['destino_nombre']}**:  \n"
+        f"⛴️ Ruta a **Ibiza** via **{rf['origen_nombre']} → {rf['destino_nombre']}**:  \n"
         f"🚗 {ref['city']} → {rf['origen_nombre']}: **{r_f['km_carr_tierra']} km** · "
         f"⛴️ Ferry: **{rf['ferry_km']} km** · "
         f"🚗 {rf['destino_nombre']} → Can Misses: **{r_f['km_carr_ibiza']} km** · "
