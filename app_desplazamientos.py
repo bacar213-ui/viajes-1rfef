@@ -142,6 +142,14 @@ RECORDS = {
 # Estadio Can Misses (destino final en Ibiza)
 IBIZA_ESTADIO = TEAMS[IBIZA]
 
+
+# Equipos que usan artículo "la" delante del nombre
+_ART_LA = {"SD Huesca", "AD Alcorcón", "AD Mérida", "CyD Leonesa", "UD Logroñés", "UD Ourense"}
+
+def art(equipo):
+    """Devuelve 'la ' + equipo si procede, si no solo el nombre."""
+    return f"la {equipo}" if equipo in _ART_LA else equipo
+
 GEOJSON_URL = "https://raw.githubusercontent.com/codeforgermany/click_that_hood/main/public/data/spain-provinces.geojson"
 
 @st.cache_data(show_spinner=False)
@@ -270,7 +278,7 @@ st.sidebar.markdown("---")
 color_grupo = GRUPO_COLORS[grupo_sel]
 ref = TEAMS[equipo_ref]
 city_ref = ref["city"]
-st.markdown(f"<h2 style='color:{color_grupo};'>Grupo {grupo_sel} — Distancias para el <em>{equipo_ref}</em> desde {city_ref}</h2>",
+st.markdown(f"<h2 style='color:{color_grupo};'>Grupo {grupo_sel} — Distancias para {art(equipo_ref)} desde {city_ref}</h2>",
             unsafe_allow_html=True)
 
 # ── CALCULAR RUTAS ────────────────────────────────────────────────────────────
@@ -300,7 +308,7 @@ elif tiene_ferry:
     rf  = r_f["ruta_ferry"]
     st.info(
         f"⛴️ Ruta a **UD Ibiza** via **{rf['origen_nombre']} → {rf['destino_nombre']}**:  \n"
-        f"🚗 {equipo_ref} → {rf['origen_nombre']}: **{r_f['km_carr_tierra']} km** · "
+        f"🚗 {ref['city']} → {rf['origen_nombre']}: **{r_f['km_carr_tierra']} km** · "
         f"⛴️ Ferry: **{rf['ferry_km']} km** · "
         f"🚗 {rf['destino_nombre']} → Can Misses: **{r_f['km_carr_ibiza']} km** · "
         f"**Total: {r_f['km_total']} km**"
